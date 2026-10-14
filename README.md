@@ -1,4 +1,4 @@
-# ArgoCD-BlueGreen-Deployment-Strategies
+# ArgoCD-Blue-Green-Deployment-Strategies
 
 ## 📌 Overview
 This repository is created to practice the **Blue‑Green Deployment strategy** in Kubernetes.  
