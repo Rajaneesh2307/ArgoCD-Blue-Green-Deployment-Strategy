@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: green-env
+spec:
+  replicas: 4
+  selector:
+    matchLabels:
+      app: v2
+  template:
+    metadata:
+      labels:
+        app: v2
+    spec:
+      containers:
+        - name: green-container
+          image: yembulururajaneesh/tetrisgame:v2
+          ports:
+            - containerPort: 3000
