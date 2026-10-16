@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blue-env
+spec:
+  replicas: 4
+  selector:
+    matchLabels:
+      app: v1
+  template:
+    metadata:
+      labels:
+        app: v1
+    spec:
+      containers:
+        - name: blue-container
+          image: yembulururajaneesh/tetrisgame:v1
+          ports:
+            - containerPort: 3000
