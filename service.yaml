@@ -5,7 +5,7 @@ metadata:
 spec:
   type: LoadBalancer
   selector:
-    app: v2
+    app: v1
   ports:
     - port: 8082
       targetPort: 3000
